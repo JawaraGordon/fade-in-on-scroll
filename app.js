@@ -10,3 +10,23 @@ const initHiddenElements = () => {
     rootMargin: "0px",
     threshold: 0.5,
   };
+  // observer Class to add/remove show class
+  const observer = new IntersectionObserver((item) => {
+    item.forEach((section) => {
+      section.isIntersecting
+        ? section.target.classList.add("show")
+        : section.target.classList.remove("show");
+    });
+  }, options);
+
+  const hiddenElements = document.querySelectorAll(".fade-in-on-scroll");
+  console.log("hiddenEls", hiddenElements);
+  hiddenElements.forEach((element) => {
+    element.classList.add("hidden");
+  });
+
+  // iterate through all hidden elements with observer Class
+  showElements.forEach((element) => {
+    observer.observe(element);
+  });
+};
