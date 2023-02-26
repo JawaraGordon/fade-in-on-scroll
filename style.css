@@ -26,7 +26,7 @@ body {
     transition: all 2s;
   }
 
-/* Exit Animations */
+/* Optional Exit Animations */
 
 .exit-left{
   transform: translateX(-100%);
