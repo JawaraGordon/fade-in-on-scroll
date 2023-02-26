@@ -2,6 +2,8 @@
 
 ## This is a JavaScript application that adds a "hidden" class to HTML elements, then uses an Intersection Observer to add a "show" class to them when they come into view.
 
+### Live demo: https://fade-in-on-scroll.vercel.app/
+
 ### Functionality
 
 - The initHiddenElements function selects all elements with the class fade-in-on-scroll and adds the class hidden to them. It then sets up an Intersection Observer to observe these elements and adding the class show to them when they reach 50% visibility.
