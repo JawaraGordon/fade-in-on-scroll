@@ -12,6 +12,10 @@ body {
     align-content: center;
     min-height: 100vh;
   }
+
+  .scroll-text{
+    padding-top: 10rem;
+  }
   
   .hidden {
     opacity: 0;
@@ -86,6 +90,18 @@ body {
 }
 .exit-down{
   transform: translateY(100%);
+}
+
+/* Optional Flashing Animation */
+
+.flash {
+  animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+  50% {
+    opacity: 0;
+  }
 }
 
 
